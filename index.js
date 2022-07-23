@@ -8,7 +8,7 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 document.querySelector("#newsletter").addEventListener("click",function(){
-  window.location.href="www.google.com"
+  window.location.href="newsletter.html"
 })
 var acc = document.getElementsByClassName("accordion");
 var i;
@@ -52,3 +52,12 @@ leftBtn.addEventListener("click",function(){
   crauser.src=imagelink[imagestate];
 
 })
+document.getElementById("mid-logo").addEventListener("click",function(){
+  window.location.href="index.html"
+})
+
+document.querySelector(".signupbtn").addEventListener("click",function(){
+  document.querySelector(".inner").innerText="Verification email has been sent to your inbox. Please verify to complete subscription."
+ alert("Sucessfully signup")
+})
+
